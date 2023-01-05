@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dons",
+  "info": {
+    "singularName": "don",
+    "pluralName": "dons",
+    "displayName": "don",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "ArgentRecu": {
+      "type": "boolean",
+      "default": false
+    },
+    "contrepartie": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::contrepartie.contrepartie",
+      "inversedBy": "dons"
+    },
+    "montant": {
+      "type": "decimal"
+    },
+    "email": {
+      "type": "email"
+    },
+    "emailSent": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

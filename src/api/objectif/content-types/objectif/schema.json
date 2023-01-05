@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "objectifs",
+  "info": {
+    "singularName": "objectif",
+    "pluralName": "objectifs",
+    "displayName": "objectif"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "position": {
+      "type": "integer"
+    },
+    "montant": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

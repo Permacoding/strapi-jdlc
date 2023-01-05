@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contreparties",
+  "info": {
+    "singularName": "contrepartie",
+    "pluralName": "contreparties",
+    "displayName": "contrepartie"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "dateDispo": {
+      "type": "date"
+    },
+    "montant": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "stock": {
+      "type": "integer"
+    },
+    "dons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::don.don",
+      "mappedBy": "contrepartie"
+    }
+  }
+}

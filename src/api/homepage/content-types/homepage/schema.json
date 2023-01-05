@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "homepage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "imageAcceuil": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "titreProjet": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "contenuProjet": {
+      "type": "richtext"
+    },
+    "dateFin": {
+      "type": "date"
+    }
+  }
+}
